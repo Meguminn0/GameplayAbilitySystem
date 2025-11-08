@@ -1,13 +1,13 @@
 // It 
 
 
-#include "AuraCharacterBase.h"
+#include "Character/AuraCharacterBase.h"
 
 // Sets default values
 AAuraCharacterBase::AAuraCharacterBase()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;	// Do not call tick function every frame
 
 }
 
@@ -18,6 +18,7 @@ void AAuraCharacterBase::BeginPlay()
 	
 }
 
+/*
 // Called every frame
 void AAuraCharacterBase::Tick(float DeltaTime)
 {
@@ -31,4 +32,5 @@ void AAuraCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
+*/
 
