@@ -9,9 +9,9 @@ AAuraCharacterBase::AAuraCharacterBase()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;	// Do not call tick function every frame
 
-	WeapenMesh = CreateDefaultSubobject<USkeletalMeshComponent>("Weapen");
-	WeapenMesh->SetupAttachment(GetMesh(), TEXT("WeaponHandSocket"));
-	WeapenMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
+	WeaponMesh->SetupAttachment(GetMesh(), TEXT("WeaponHandSocket"));
+	WeaponMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
 // Called when the game starts or when spawned

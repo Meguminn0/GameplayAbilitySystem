@@ -23,7 +23,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, Category = "Meshs")
-	TObjectPtr<USkeletalMeshComponent> WeapenMesh;
+	TObjectPtr<USkeletalMeshComponent> WeaponMesh;
 
 /*
 public:	
