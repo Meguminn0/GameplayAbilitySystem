@@ -5,8 +5,10 @@
 
 void AAuraEnemyCharacter::HighlightActor()
 {
+	bHighlighted = true;
 }
 
 void AAuraEnemyCharacter::UnHighlightActor()
 {
+	bHighlighted = false;
 }
